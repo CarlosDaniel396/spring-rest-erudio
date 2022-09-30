@@ -27,6 +27,19 @@ public class PersonService {
 		return persons;
 	}
 
+	public Person findById(String id) {
+
+		logger.info("Finding one person!");
+
+		Person person = new Person();
+		person.setId(counter.incrementAndGet());
+		person.setFirstName("Leandro");
+		person.setLastName("Costa");
+		person.setAddress("Uberlandia - Minas Gerais - Brasil");
+		person.setGender("Male");
+		return person;
+	}
+
 	private Person mockPerson(int i) {
 		Person person = new Person();
 		person.setId(counter.incrementAndGet());
