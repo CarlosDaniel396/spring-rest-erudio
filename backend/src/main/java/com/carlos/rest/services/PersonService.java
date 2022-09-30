@@ -40,6 +40,13 @@ public class PersonService {
 		return person;
 	}
 
+	public Person create(Person person) {
+
+		logger.info("Creating one person!");
+
+		return person;
+	}
+
 	private Person mockPerson(int i) {
 		Person person = new Person();
 		person.setId(counter.incrementAndGet());
