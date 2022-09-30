@@ -54,6 +54,11 @@ public class PersonService {
 		return person;
 	}
 
+	public void delete(String id) {
+
+		logger.info("Deleting one person!");
+	}
+
 	private Person mockPerson(int i) {
 		Person person = new Person();
 		person.setId(counter.incrementAndGet());
